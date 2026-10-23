@@ -1,7 +1,5 @@
-
 import Todos from './Components/Todos.jsx'
 import Info from './Components/Info.jsx'
-
 
 function App() {
   return (
