@@ -17,6 +17,14 @@ const [text, setText] = useState('')
         setTodos([...todos, newTodo])
         setText('')
    }
+ 
+    function handleToggle(id) {
+        setTodos(
+        todos.map((todo) =>
+            todo.id === id ? { ...todo, completed: !todo.completed } : todo
+        )
+        )
+    }
 
     todos.map((todo) => todo.text)
  
@@ -55,7 +63,7 @@ const [text, setText] = useState('')
               <input
                   type="checkbox"
                   checked={todo.completed}
-                  readOnly
+                  onChange={() => handleToggle(todo.id)}
                   className="ml-[15px] size-[30px] shrink-0 cursor-pointer accent-[#59a193]"
                 />
               <span
