@@ -32,6 +32,14 @@ function Todos() {
         setTodos(todos.filter((todo) => !todo.completed))
     }
 
+    
+    const allCompleted =
+    todos.length > 0 && todos.every((todo) => todo.completed)
+
+
+    
+    
+
  
   return (
     <section className="mx-auto max-w-[550px]">
