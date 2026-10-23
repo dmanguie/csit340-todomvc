@@ -58,6 +58,39 @@ function Todos() {
             </li>
           </ul>
         </main>
+
+        <footer className="grid h-10 grid-cols-3 items-center border-t border-[#e6e6e6] px-[15px] text-[15px]">
+          <span>
+            <strong className="font-light">1</strong> item left
+          </span>
+
+          <ul className="flex justify-center gap-1">
+            <li>
+              <button
+                type="button"
+                className="cursor-pointer rounded-[3px] border border-[#b83f45]/20 px-[7px] py-[3px]"
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                className="cursor-pointer rounded-[3px] border border-transparent px-[7px] py-[3px] hover:border-[#b83f45]/10"
+              >
+                Active
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                className="cursor-pointer rounded-[3px] border border-transparent px-[7px] py-[3px] hover:border-[#b83f45]/10"
+              >
+                Completed
+              </button>
+            </li>
+          </ul>
+        </footer>
       </div>
 
     </section>
